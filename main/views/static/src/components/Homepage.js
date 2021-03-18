@@ -18,7 +18,7 @@ export default function Homepage() {
                 <Button variant='contained' color='primary' to='/about' component={Link}>
                     About Page
                 </Button>
-                <Button variant='contained' color='secondary' to='/api' component={Link}>
+                <Button variant='contained' color='secondary' href='/api'>
                     API Link
                 </Button>
             </ButtonGroup>

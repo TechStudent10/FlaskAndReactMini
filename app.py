@@ -1,19 +1,8 @@
 # IMPORTS
-from flask import Flask, render_template, url_for
-from api import api
+from main import create_app
 
 # INITIALIZATION
-app = Flask(__name__)
-app.register_blueprint(api, url_prefix="/api")
-
-# VIEWS
-@app.route("/")
-def index():
-    return react()
-
-@app.route("/about")
-def about():
-    return react()
+app = create_app()
 
 # RUN FLASK
 if __name__ == "__main__":
